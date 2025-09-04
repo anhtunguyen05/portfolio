@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import TagManager from "react-gtm-module";
+import { ToastContainer } from "react-toastify";
+import Navbar from "./components/navbar";
+import HeroSection from "./components/hero-section";
+import ScrollToTop from "./helpers/scroll-to-top";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import"./card.scss"
+
+
+TagManager.initialize({ gtmId: "GTM-XXXXXXX" });
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <ToastContainer />
+      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+        <Navbar/>
+        <HeroSection />
+         
+        <ScrollToTop />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
