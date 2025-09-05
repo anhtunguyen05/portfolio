@@ -6,9 +6,21 @@ import cors from "cors";
 
 dotenv.config();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// serve React build
+// Serve static files từ folder dist
+app.use(express.static(path.join(__dirname, "../dist")));
+
+// React Router fallback (cho SPA)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist", "index.html"));
+});
 
 // Tạo transporter cho Nodemailer
 const transporter = nodemailer.createTransport({
