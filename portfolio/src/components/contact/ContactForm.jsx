@@ -20,7 +20,6 @@ function ContactForm() {
   };
 
   const handleSendMail = async (e) => {
-    
     e.preventDefault();
 
     if (!userInput.email || !userInput.message || !userInput.name) {
@@ -33,12 +32,8 @@ function ContactForm() {
     }
 
     try {
-        // console.log("Sending mail...");
       setIsLoading(true);
-      const res = await axios.post(
-        "http://localhost:5000/api/contact",
-        userInput
-      );
+      const res = await axios.post("/api/contact", userInput);
 
       toast.success("Message sent successfully!");
       setUserInput({
@@ -47,7 +42,6 @@ function ContactForm() {
         message: "",
       });
     } catch (error) {
-        console.log(error);
       toast.error(error?.response?.data?.message);
     } finally {
       setIsLoading(false);
