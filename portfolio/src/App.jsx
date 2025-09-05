@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import HeroSection from "./components/hero-section";
 import AboutSection from "./components/about";
 import Skills from "./components/skills";
+import Projects from "./components/projects";
 import ScrollToTop from "./helpers/scroll-to-top";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
@@ -20,7 +21,8 @@ function App() {
         <Navbar />
         <HeroSection />
         <AboutSection />
-    <Skills/>
+        <Skills />
+        <Projects />
         <ScrollToTop />
       </div>
     </>
