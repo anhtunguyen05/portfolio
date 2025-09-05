@@ -64,7 +64,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     // Gửi email
     await transporter.sendMail({
-      from: "Portfolio",
+      from: process.env.EMAIL_ADDRESS,
       to: process.env.EMAIL_ADDRESS,
       subject: `New Message From ${name}`,
       text: formattedMessage,
