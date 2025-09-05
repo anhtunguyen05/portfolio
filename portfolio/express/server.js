@@ -20,8 +20,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../dist")));
 
 // React Router fallback (cho SPA)
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist", "index.html"));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 // Tạo transporter cho Nodemailer
