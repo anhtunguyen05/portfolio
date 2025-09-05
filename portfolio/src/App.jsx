@@ -5,7 +5,9 @@ import HeroSection from "./components/hero-section";
 import AboutSection from "./components/about";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
+import ContactSection from "./components/contact/Contact";
 import ScrollToTop from "./helpers/scroll-to-top";
+import Footer from "./components/footer/Footer";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
@@ -23,8 +25,11 @@ function App() {
         <AboutSection />
         <Skills />
         <Projects />
+        <ContactSection/>
+       
         <ScrollToTop />
       </div>
+       <Footer/>
     </>
   );
 }
