@@ -23,7 +23,7 @@ function HeroSection() {
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
             Hello, <br />
             This is <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {` , I'm a  `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>.
           </h1>
 
@@ -55,14 +55,14 @@ function HeroSection() {
               <FaFacebook size={30} />
             </a>
 
-            <a
+            {/* <a
               href={personalData.leetcode}
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
-            </a>
+            </a> */}
           </div>
 
           <div className="flex items-center gap-3">
