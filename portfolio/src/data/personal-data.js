@@ -1,3 +1,5 @@
+import { BsGitlab } from "react-icons/bs";
+
 export const personalData = {
   name: "Nguyễn Anh Tú",
   profile: "/profile.jpg",
@@ -11,6 +13,7 @@ export const personalData = {
   phone: "0912252316",
   address: "FPT PLaza 2, Da Nang, Vietnam",
   github: "https://github.com/anhtunguyen05",
+  gitlab: "https://gitlab.com/anhtunguyen643",
   facebook: "https://www.facebook.com/2way.nif",
   linkedIn: "https://www.linkedin.com/in/anh-t%C3%BA-nguyen-75133a382/",
   //  twitter: 'https://twitter.com/said7388',
