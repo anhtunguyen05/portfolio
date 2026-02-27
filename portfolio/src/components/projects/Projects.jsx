@@ -18,12 +18,11 @@ const Projects = () => {
         <div className="flex flex-col gap-6">
           {projectsData.slice(0, 4).map((project, index) => (
             <div
-              id={`sticky-card-${index + 1}`}
+              id={`project-card-${index + 1}`}
               key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
-              style={{ zIndex: 100 + index }}
+              className="w-full mx-auto max-w-2xl"
             >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s] bg-black bg-opacity-20 backdrop-blur-sm">
+              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s] bg-black bg-opacity-20 backdrop-blur-sm hover:shadow-[0_0_40px_0_rgba(139,92,246,0.3)]">
                 <ProjectCard project={project} />
               </div>
             </div>

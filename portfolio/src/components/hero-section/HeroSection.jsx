@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { personalData } from "../../data/personal-data";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsGitlab } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
@@ -54,6 +54,15 @@ function HeroSection() {
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
+            </a>
+
+            <a
+              href={personalData.gitlab}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
+            >
+              <BsGitlab size={30} />
             </a>
 
             {/* <a
@@ -119,6 +128,10 @@ function HeroSection() {
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">React</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NextJS</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NestJS</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Tailwind</span>
                 <span className="text-gray-400">{"', '"}</span>
