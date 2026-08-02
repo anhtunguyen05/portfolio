@@ -1,6 +1,47 @@
 export const projectsData = [
   {
     id: 1,
+    name: "AI Engineering Knowledge Platform",
+    description:
+      "Developing an AI-powered engineering knowledge platform that transforms software repositories into structured engineering knowledge for architecture understanding, impact analysis, and AI-assisted software development. Built a Knowledge Engine to analyze repositories and construct an Engineering Knowledge Graph using Tree-sitter, Neo4j, and PostgreSQL. Developed a Context Intelligence Engine to retrieve and compose relevant engineering knowledge for LLM reasoning. Implemented LangGraph workflows for architecture review and impact analysis. Applied Hexagonal Architecture, Clean Architecture, and DDD.",
+    tools: [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Neo4j",
+      "PostgreSQL",
+      "Qdrant",
+      "Redis",
+      "Tree-sitter",
+      "Docker",
+      "uv",
+    ],
+    role: "Full-stack Developer",
+    github: "https://github.com/anhtunguyen05/aiekp",
+    demo: "",
+  },
+  {
+    id: 2,
+    name: "Edura – Tutor Booking & Learning Management Platform",
+    description:
+      "Developed a full-stack tutoring marketplace platform that enables students to book 1-on-1 tutoring sessions and find suitable tutors through AI-powered matching. Built responsive web applications using Next.js, TypeScript, Tailwind CSS, and RTK Query. Designed backend services with NestJS Modular Clean Architecture, PostgreSQL, Prisma ORM, Redis, and RabbitMQ. Implemented JWT authentication, role-based access control, booking/payment workflows, and attendance tracking. Developed an AI-powered recommendation system.",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
+    ],
+    role: "Full-stack Developer",
+    github: "https://gitlab.com/edura",
+    demo: "https://edura-web-sigma.vercel.app",
+  },
+  {
+    id: 3,
     name: "UniBuddy – AI-Powered Student Recommendation Platform",
     description:
       "Developed a full-stack platform that recommends learning resources, events, and student clubs using semantic search and personalized ranking. Built Web (Next.js, TypeScript, Redux Toolkit) and Mobile (React Native) applications. Designed and implemented RESTful APIs (Node.js, Express, MongoDB) using a clean Controller–Service–Model architecture. Implemented JWT authentication, OTP verification, refresh tokens, and role-based authorization. Integrated a Python-based semantic search & recommendation system (Embeddings, Two-Tower Model). Enabled real-time notifications with Socket.IO. Wrote unit and integration tests (Jest) and containerized services using Docker.",
@@ -24,7 +65,7 @@ export const projectsData = [
     demo: "",
   },
   {
-    id: 2,
+    id: 4,
     name: "Chat App Clone Messenger",
     description:
       "Designed and implemented a full-stack messaging application with Next.js (TypeScript, Redux Saga), Express.js, and MongoDB. Features include real-time communication via Socket.io, emoji and GIF integration, message persistence, user authentication, and responsive UI built with Tailwind CSS. Focused on scalable architecture and a smooth chat experience similar to Facebook Messenger.",
@@ -42,7 +83,7 @@ export const projectsData = [
     demo: "https://chat-app-ui-tau.vercel.app",
   },
   {
-    id: 3,
+    id: 5,
     name: "Vegetable Trading Platform",
     description:
       "My team developed a Vegetable Trade Platform to efficiently connect local farmers with retailers. Using Java, Spring Boot, and MySQL, I implemented backend APIs for many part in projects. Additionally, I contributed to the frontend development, building interfaces for web. The frontend consumed backend APIs, including integration with Gemini AI APIs for Chatbot. This project gave me hands-on experience in full-stack development, API integration with third-party services, and AI-assisted features, while improving my problem-solving and teamwork skills.",
@@ -65,7 +106,7 @@ export const projectsData = [
     demo: "",
   },
   {
-    id: 4,
+    id: 6,
     name: "Music Streaming Web App",
     description:
       "I developed a Music Web application where users can browse, stream, and manage their favorite tracks. The project was built using Java Servlets and JSP for the frontend and backend logic, with SQL Server for data storage. I focused on creating dynamic and responsive web pages and integrating backend logic to handle user authentication, playlist management, and music streaming. This project enhanced my full-stack development skills, particularly in Servlet/JSP development, database integration, and delivering a seamless user experience.",
@@ -80,7 +121,7 @@ export const projectsData = [
     role: "Full Stack Developer",
     github: "https://github.com/anhtunguyen05/Music-Player",
     demo: "",
-  },
+  }
 ];
 
 // Do not remove any property.

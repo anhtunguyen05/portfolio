@@ -3,15 +3,12 @@ import { BsGitlab } from "react-icons/bs";
 export const personalData = {
   name: "Nguyễn Anh Tú",
   profile: "/profile.jpg",
-  designation: "Software Developer",
+  designation: "Intern Fullstack Developer",
   description:
-    "My name is Nguyễn Anh Tú. I am a Software Engineering student at FPT University with a strong passion for web development and emerging technologies.  " +
-    "Over the past few years, I have built a solid foundation in front-end and back-end development" +
-    "I enjoy working on personal projects, exploring new frameworks, and solving problems through clean and efficient code. " +
-    "My goal is to become a versatile software engineer who can contribute to impactful projects and continuously grow in both technical expertise and teamwork.",
+    "Final-year Software Engineering student with hands-on experience building scalable backend systems, AI-powered engineering platforms, and full-stack web applications. Experienced in designing modular architectures, knowledge-driven systems, RESTful APIs, and repository analysis pipelines using Python, TypeScript, and modern cloud-native technologies. Passionate about backend engineering, AI infrastructure, software architecture, and building developer tools that improve software engineering workflows.",
   email: "anhtunguyen643@gmail.com",
   phone: "0912252316",
-  address: "FPT PLaza 2, Da Nang, Vietnam",
+  address: "Ngu Hanh Son, Da Nang",
   github: "https://github.com/anhtunguyen05",
   gitlab: "https://gitlab.com/anhtunguyen643",
   facebook: "https://www.facebook.com/2way.nif",
@@ -21,5 +18,5 @@ export const personalData = {
   leetcode: "https://leetcode.com/said3812/",
   devUsername: "said7388",
   resume:
-    "https://drive.google.com/file/d/1sS08VA5Ttk9mgC7BbGrA2BvhYky1o3lR/view?usp=sharing",
+    "https://drive.google.com/file/d/1R1Iir5ElksAkn-GAuvWeSQCEa5YPFV5Y/view?usp=drive_link",
 };
